@@ -19,7 +19,7 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             className="px-4 py-2 rounded-full border border-primary-500/30 bg-primary-500/10 text-primary-500 text-sm font-semibold mb-6 inline-block"
           >
-            Available for new opportunities
+            Seeking for new opportunities
           </motion.span>
           
           <h1 className="heading-xl mb-6">
@@ -39,13 +39,14 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <motion.button 
+            <motion.a 
+              href="#projects"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="btn-primary flex items-center gap-2"
             >
               View Projects <ChevronRight size={18} />
-            </motion.button>
+            </motion.a>
             <div className="flex items-center gap-4 ml-4">
               {[
                 { Icon: Github, href: 'https://github.com/abi-1128/' },
@@ -67,7 +68,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        <div className="hidden lg:block relative">
+        <div className="relative mt-12 lg:mt-0 max-w-2xl mx-auto lg:max-w-none">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
