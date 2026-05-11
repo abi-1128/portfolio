@@ -2,9 +2,18 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 import project1 from '../assets/eDNA.png';
 import project2 from '../assets/project2.jpg';
+import project4 from '../assets/project4.png';
 import SMS from '../assets/SMS.jpg';
 
 const projects = [
+  {
+    title: 'AI Driven Farming Mentor for Landowners',
+    description: 'Farming Mentor platform that helps farmers choose suitable crops,manage seasonal farming, and connect directly with consumers forbetter profits.',
+    image: project4,
+    tags: ['React', 'Springboot', 'JPA'],
+    github: 'https://github.com/abi-1128/AIFarming.git',
+    live: '#',
+  },
   {
     title: 'Smart Aquatic Genomic Analysis and Research Platform',
     description: 'Identifying Taxonomy and Assessing Marine Biodiversity with eDNA .',
@@ -73,7 +82,7 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-            
+
             <div className="p-6">
               <div className="flex gap-2 mb-4">
                 {project.tags.map(tag => (
