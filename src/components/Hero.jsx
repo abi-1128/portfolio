@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ChevronRight, Github, Linkedin, Instagram } from 'lucide-react';
 import Scene3D from './Scene3D';
-import profileImg from '../assets/Abi.png';
+import profileImg from '../assets/Abhi.png';
 
 export default function Hero() {
   return (
@@ -35,7 +35,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-xl leading-relaxed">
-            I am a Frontend Developer  enthusiast specializing in building modern, responsive web applications with React.js, with experience in full-stack development and a strong focus on delivering interactive and user-centric solutions.
+            I am a Web Developer  enthusiast specializing in building modern, responsive web applications with React.js, with experience in full-stack development and a strong focus on delivering interactive and user-centric solutions.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -75,11 +75,11 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.5 }}
             className="w-full aspect-square relative"
           >
-            <div className="absolute inset-0 bg-primary-500/20 blur-[100px] rounded-full animate-pulse" />
+            <div className="absolute inset-0 bg-primary-500/20 blur-[100px]" />
             <img 
               src={profileImg} 
               alt="Profile" 
-              className="relative z-10 w-full h-full object-cover rounded-3xl border-2 border-white/20 shadow-2xl"
+              className="relative z-10 w-full h-full object-cover"
             />
           </motion.div>
         </div>
