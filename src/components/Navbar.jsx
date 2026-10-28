@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, Menu, X, FileText, Download, ExternalLink } from 'lucide-react';
-import resume from '../assets/AbhishekBaratam.pdf';
+import resume from '../assets/AbhishekLTM.pdf';
 
 const navLinks = [
   { name: 'About', href: '#about' },
